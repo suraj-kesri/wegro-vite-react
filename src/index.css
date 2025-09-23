@@ -54,6 +54,69 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  color: #2c6f4f; /* override for heading color */
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Highlight brand mentions */
+.highlight {
+  color: #2c6f4f;
+  font-weight: 600;
+}
+
+/* Notice for under repair */
+.notice {
+  font-weight: bold;
+  color: #ff5555;
+  margin: 30px 0;
+}
+
+/* WhatsApp CTA button styling */
+.cta a span {
+  display: inline-block;
+  background-color: #25d366; /* WhatsApp green */
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta a span:hover {
+  background-color: #1ebe57;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .cta a span {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

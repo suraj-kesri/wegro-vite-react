@@ -8,26 +8,24 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div className="container">
+      <h1>About Wegro</h1>
+      <p>
+        At <span className="highlight">Wegro</span>, we believe city living shouldn’t mean losing touch with nature. Our mission is simple: bring farming back into urban homes, not as a chore, but as a lifestyle upgrade.
       </p>
+      <p>
+        We design and build smart indoor gardening products that make it possible for anyone to grow fresh, chemical-free food right where they live. From compact microgreens kits to intelligent appliances that manage water, light, and nutrition for you, <span className="highlight">Wegro</span> is about creating green corners that thrive in modern spaces.
+      </p>
+      <p className="notice">
+        Our website is currently under repair. Meanwhile, you can connect with us directly on WhatsApp.
+      </p>
+
+      <div className="cta">
+        <a href="https://wa.me/YOUR_NUMBER_HERE" target="_blank" rel="noopener noreferrer">
+          <span>Connect on WhatsApp</span>
+        </a>
+      </div>
+    </div>
     </>
   )
 }

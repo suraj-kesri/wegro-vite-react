@@ -13,7 +13,7 @@ const App: React.FC = () => {
         Our website is currently under repair. Meanwhile, you can connect with us directly on WhatsApp.
       </p>
       <div className="cta">
-        <a href="https://wa.me/YOUR_NUMBER_HERE" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/9455386877" target="_blank" rel="noopener noreferrer">
           <span>Connect on WhatsApp</span>
         </a>
       </div>

@@ -26,9 +26,9 @@ export default function Footer() {
         <div>
           <h3 className={styles.subHeading}>Contact</h3>
           <p className={styles.address}>
-            No. 202, Pooja Apartments,<br />
-            1st Main, 3rd cross, R.M.V. Extension II Stage,<br />
-            Bangalore - 560094, Karnataka
+            Indian Institute Of Science Campus,<br />
+            Gulmohar Marg, Devasandra Layout,<br />
+            Bengaluru, Karnataka 560012
           </p>
 
           <a className={styles.email} href="mailto:contact@wegro.in">

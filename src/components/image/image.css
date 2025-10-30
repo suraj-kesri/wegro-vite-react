@@ -26,7 +26,8 @@
     .balcony-image {
       margin: 0 24px;
       aspect-ratio: 3 / 4;
-      translate: 0rem;
+      
+      object-position: 70% center;
     }
   }
   

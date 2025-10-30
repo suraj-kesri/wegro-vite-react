@@ -1,23 +1,26 @@
 // src/App.tsx
 import React from "react";
 import "./App.css";
+import Footer from "./components/footer/footer.tsx";
+import ContactSection from "./components/contact/contactSection.tsx";
+import SupportedBy from "./components/supportedBy/supportedBy.tsx";
+import Image from "./components/image/image.tsx";
+import NurchHero from "./components/nurchHero/NurchHero.tsx";
+import Hero from "./components/hero/Hero.tsx";
 
 const App: React.FC = () => {
   return (
-    <div className="container">
-      <h1>About Wegro</h1>
-      <p>
-        At <span className="highlight">Wegro</span>, we believe city living shouldn’t mean losing touch with nature. Our mission is simple: bring farming back into urban homes, not as a chore, but as a lifestyle upgrade.
-      </p>
-      <p className="notice">
-        Our website is currently under repair. Meanwhile, you can connect with us directly on WhatsApp.
-      </p>
-      <div className="cta">
-        <a href="https://wa.me/9455386877" target="_blank" rel="noopener noreferrer">
-          <span>Connect on WhatsApp</span>
-        </a>
-      </div>
+    <><><div className="container">
+      
     </div>
+      <Hero />
+      <NurchHero />
+      <Image />
+      <SupportedBy />
+      <ContactSection />
+      </><Footer />
+      
+    </>
   );
 };
 

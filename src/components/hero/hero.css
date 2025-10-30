@@ -1,0 +1,72 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 2px;
+  }
+  
+  /* Common image styling */
+  .hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Show only desktop image by default */
+  .hero-image.desktop {
+    display: block;
+  }
+  
+  .hero-image.mobile {
+    display: none;
+  }
+  
+  /* Text content overlay */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #222;
+    padding: 0 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Switch image on smaller screens */
+  @media (max-width: 768px) {
+    .hero-image.desktop {
+      display: none;
+    }
+    .hero-image.mobile {
+      display: block;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,113 @@
+.nurch-hero {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 32px;
+    overflow: hidden;
+  }
+  
+  .nurch-image {
+    width: 80%;
+    height: auto;
+    margin-left: 20%;
+    
+    display: block;
+    border-radius: 32px;
+    object-fit: cover;
+  }
+  
+  /* Overlay text */
+  .nurch-overlay {
+    position: absolute;
+    top: 12%;
+    left: 6%;
+    color: #000;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nurch-intro {
+    font-size: 18px;
+    font-family: 'IBM Plex Sans Italic', Calibri, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    margin: 0;
+  }
+  
+  .nurch-title {
+    font-size: 56px;
+    font-weight: 800;
+    margin: 4px 0;
+  }
+  
+  .nurch-subtitle {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+  
+  .nurch-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nurch-btn {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 36px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .nurch-btn.install {
+    background-color: #178E5E;
+    color: #fff;
+  }
+  
+  .nurch-btn.explore {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+  
+  /* ---------- Responsive ---------- */
+  @media (max-width: 768px) {
+    .nurch-overlay {
+      position: static;
+      padding: 16px;
+      background: #fff;
+      text-align: center;
+      align-items: center;
+    }
+    
+    .nurch-image {
+      margin-left: 0%;
+      width: 100%;
+    }
+
+    .nurch-title {
+      font-size: 36px;
+    }
+    
+    .nurch-logo {
+      display: block;
+      border-radius: 0px;
+      object-fit: cover;
+    }
+    .nurch-intro {
+      font-size: 16px;
+    }
+  
+    .nurch-subtitle {
+      font-size: 14px;
+    }
+  
+    .nurch-btn {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+  }
+  

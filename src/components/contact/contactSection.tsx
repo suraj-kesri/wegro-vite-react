@@ -25,7 +25,9 @@ export default function ContactSection() {
           </p>
 
           <p className={styles.email}>
-            <strong>Email:</strong> wegro.rethinkfood@gmail.com
+            <strong>Email:</strong> <a href="mailto:contact@wegro.in">
+            contact@wegro.in
+          </a>
           </p>
 
           <a

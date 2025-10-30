@@ -36,7 +36,9 @@
   /* Responsive */
   @media (max-width: 768px) {
     .logos {
-      gap: 25px;
+      gap: 32px;
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
     }
   
     .logos img {

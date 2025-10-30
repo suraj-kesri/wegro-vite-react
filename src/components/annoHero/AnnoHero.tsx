@@ -4,10 +4,10 @@ import "./AnnoHero.css";
 const AnnoHero: React.FC = () => {
   return (
     <section className="anno-hero">
-      <img src='.\src\assets\Anno\ANNO Ren 1 1.png' alt="Anno Pod" className="anno-image" />
+      <img src='/ANNO Ren 1 1.png' alt="Anno Pod" className="anno-image" />
       <div className="anno-overlay">
         <h4 className="anno-intro">Introducing</h4>
-        <img className="anno-logo" src='.\src\assets\logos\anno-logo.png' alt="anno Balcony"  />
+        <img className="anno-logo" src='/anno-logo.png' alt="anno Balcony"  />
         <p className="anno-subtitle">
           Advanced Farming Pods with  <br />
           Active Air Purification for 

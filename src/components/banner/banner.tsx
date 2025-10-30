@@ -6,14 +6,14 @@ const Banner: React.FC = () => {
     <section className="banner">
       {/* Desktop banner */}
       <img
-        src="./src/assets/banner-desktop.png"
+        src="/banner-desktop.png"
         alt="Desktop banner"
         className="banner-image desktop"
       />
 
       {/* Mobile banner */}
       <img
-        src="./src/assets/banner-mobile.png"
+        src="/banner-mobile.png"
         alt="Mobile banner"
         className="banner-image mobile"
       />

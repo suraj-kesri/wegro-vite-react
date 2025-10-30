@@ -16,7 +16,7 @@ const AnnoAirHero: React.FC = () => {
       <img src='/ANNO Ren 1 1.png' alt="Anno Pod" className="anno-image" />
       <div className="anno-overlay">
         
-        <img className="anno-logo" src='/anno-logo.png' alt="anno Balcony"  />
+        <img className="anno-logo" src='/anno-AIR.png' alt="anno Air"  />
         <p className="anno-subtitle">
           Grow 44 Plants  <br />
           Footprint: 80cm x43cm (2'7" x 1'5") <br />

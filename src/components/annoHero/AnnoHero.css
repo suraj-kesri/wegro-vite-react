@@ -1,6 +1,7 @@
 .anno-hero {
     position: relative;
     width: 100%;
+    
     max-width: 1200px;
     margin: 0 auto;
     border-radius: 32px;
@@ -9,7 +10,7 @@
   }
   
   .anno-image {
-    width: 100%;
+    width: 50%;
     height: auto;
     margin-left: 40%;
     

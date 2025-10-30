@@ -6,14 +6,14 @@ const Hero: React.FC = () => {
     <section className="hero">
       {/* Desktop Image */}
       <img
-        src="./src/assets/hero-desktop.png"
+        src="/hero-desktop.png"
         alt="Hero desktop"
         className="hero-image desktop"
       />
 
       {/* Mobile Image */}
       <img
-        src="./src/assets/hero-mobile.png"
+        src="/hero-mobile.png"
         alt="Hero mobile"
         className="hero-image mobile"
       />

@@ -1,4 +1,4 @@
-import React from "react";
+
 import styles from "./supportedBy.module.css";
 
 export default function SupportedBy() {

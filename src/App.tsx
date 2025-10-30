@@ -18,12 +18,12 @@ const App: React.FC = () => {
       <Hero />
       <AnnoHero />
       <Image 
-        src="./src/assets/Anno/ANNO Ren 7.png" 
+        src="/ANNO Ren 7.png" 
         alt="Family enjoying balcony"
       />
       <NurchHero />
       <Image 
-        src="./src/assets/Nurch/EDITV2.png" 
+        src="/EDITV2.png" 
         alt="Family enjoying balcony"
       />
       <Banner />

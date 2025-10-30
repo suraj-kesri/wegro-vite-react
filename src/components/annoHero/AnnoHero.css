@@ -79,7 +79,7 @@
   @media (max-width: 768px) {
     .anno-overlay {
       position: static;
-      padding: 16px;
+      padding: 32px;
       background: #fff;
       text-align: center;
       align-items: center;

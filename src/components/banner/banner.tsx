@@ -1,22 +1,23 @@
+// Banner.tsx
 import React from "react";
 import "./banner.css";
 
-const Banner: React.FC = () => {
-  return (
-    <section className="banner">
-      {/* Desktop banner */}
-      <img
-        src="/banner-desktop.png"
-        alt="Desktop banner"
-        className="banner-image desktop"
-      />
+interface BannerProps {
+  desktopSrc: string;
+  mobileSrc: string;
+  alt?: string;
+  className?: string;
+}
 
-      {/* Mobile banner */}
-      <img
-        src="/banner-mobile.png"
-        alt="Mobile banner"
-        className="banner-image mobile"
-      />
+const Banner: React.FC<BannerProps> = ({ desktopSrc, mobileSrc, alt = "banner", className }) => {
+  return (
+    <section className={`banner ${className || ""}`}>
+      <picture>
+        {/* Mobile-first: mobile source for small screens */}
+        <source srcSet={mobileSrc} media="(max-width: 768px)" />
+        {/* Fallback / desktop */}
+        <img src={desktopSrc} alt={alt} className="banner-image" loading="lazy" />
+      </picture>
     </section>
   );
 };

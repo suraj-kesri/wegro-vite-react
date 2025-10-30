@@ -1,0 +1,105 @@
+.header {
+    background-color: #053036;
+    color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 28px;
+    width: auto;
+  }
+  
+  /* NAVIGATION */
+  .nav .links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .links li a {
+    color: white;
+    text-decoration: none;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .links li a:hover {
+    color: #a3d9c9;
+    transition: color 0.2s ease;
+  }
+  
+  /* HAMBURGER ICON */
+.menu-toggle {
+    display: none; /* Keep hidden by default on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* Good practice to reset button padding */
+  }
+  
+  .menu-toggle .bar {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Animate bars when open */
+  .menu-toggle .bar.open:nth-child(1) {
+    transform: rotate(45deg) translateY(6px);
+  }
+  .menu-toggle .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle .bar.open:nth-child(3) {
+    transform: rotate(-45deg) translateY(-6px);
+  }
+  
+  /* MOBILE STYLES */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex; /* Show the button on mobile */
+      flex-direction: column; /* Stack bars vertically */
+      justify-content: space-between; /* Space them out */
+      width: 24px;
+      height: 18px;
+    }
+  
+    .nav {
+      position: absolute;
+      top: 60px; /* Adjust as needed to match header height */
+      right: 0;
+      background-color: #053036;
+      width: 100%;
+      text-align: center;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+  
+    .nav.open {
+      max-height: 300px; /* enough for menu items */
+    }
+  
+    .nav .links {
+      flex-direction: column;
+      gap: 16px;
+      padding: 20px 0;
+    }
+  }

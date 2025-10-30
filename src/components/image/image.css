@@ -33,7 +33,7 @@
   @media (max-width: 480px) {
     .balcony-image {
       margin: 0 12px;
-      border-radius: 12px;
+      border-radius: 0px;
     }
   }
   

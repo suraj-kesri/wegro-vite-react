@@ -16,6 +16,7 @@ const App: React.FC = () => {
       
     </div>
       <Hero />
+      <h1> Our Technologies make Plant Nurturing more adoptable while offering the Highest Convenience: for Greener Cities. </h1>
       <AnnoHero />
       <Image 
         src="/ANNO Ren 7.png" 

@@ -32,8 +32,11 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.4rem;
   line-height: 1.1;
+  text-align: center;
+  margin-top: 5rem;
+  
 }
 
 button {
@@ -65,5 +68,12 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }

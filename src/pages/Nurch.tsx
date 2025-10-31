@@ -1,11 +1,19 @@
 import React from "react";
+import NurchPageHero from "../components/nurchHero/NurchPageHero";
+import ImageSection from "../components/ImageSection/ImageSection";
 
 const Nurch: React.FC = () => {
   return (
-    <div style={{ padding: "80px 20px", textAlign: "center" }}>
-      <h1>Nurch Page</h1>
-      <p>This is the /nurch page of the website.</p>
-    </div>
+    <>
+      <NurchPageHero />
+      <ImageSection src="/NB2 01.png" alt="Smart Green Railing" />
+      <ImageSection src="/NB2 02.png" alt="Smart Green Railing" />
+      <ImageSection src="/NB2 03.png" alt="Smart Green Railing" />
+      <ImageSection src="/NB2 04.png" alt="Smart Green Railing" />
+      <ImageSection src="/NB2 05.png" alt="Smart Green Railing" />
+      <ImageSection src="/NB2 06.png" alt="Smart Green Railing" />
+      <ImageSection src="/NB2 07_1.png" alt="Smart Green Railing" />
+    </>
   );
 };
 

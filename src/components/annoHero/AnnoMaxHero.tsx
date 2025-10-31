@@ -13,7 +13,7 @@ const AnnoMaxHero: React.FC = () => {
   
   return (
     <section className="anno-hero">
-      <img src='/ANNO Ren 1 1.png' alt="Anno Pod" className="anno-image" />
+      <img src='/ANNO Ren 2 2.png' alt="Anno Pod" className="anno-image" />
       <div className="anno-overlay">
         
         <img className="anno-logo" src='/anno-MAX.png' alt="anno Max"  />

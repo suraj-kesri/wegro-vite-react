@@ -71,6 +71,10 @@
     transform: rotate(-45deg) translateY(-6px);
   }
   
+  button:focus-visible {
+    outline: none;
+  }
+
   /* MOBILE STYLES */
   @media (max-width: 768px) {
     .menu-toggle {
@@ -79,8 +83,12 @@
       justify-content: space-between; /* Space them out */
       width: 24px;
       height: 18px;
+      outline: none important;
     }
-  
+    button:focus,
+    button:focus-visible {
+      outline: 0px auto -webkit-focus-ring-color;
+    }
     .nav {
       position: absolute;
       top: 60px; /* Adjust as needed to match header height */

@@ -15,21 +15,21 @@ const teamMembers: TeamMember[] = [
     title: 'Director & Co-founder',
     details: 'Product Designer (IISc) & Mechanical Engineer\nM.Des., B.Tech.',
     image: '/SKesri.png',
-    logos: ['/siemens.png', '/carelon.png'],
+    logos: ['/Siemens_AG_logo.svg', '/carelon.png'],
   },
   {
     name: 'Sunandan Paul',
     title: 'Director & Co-founder',
     details: 'Product Designer (IISc) & Architect\nM.Des., B.Arch.',
     image: '/SPaul.png',
-    logos: ['/adb.png', '/godrej.png'],
+    logos: ['/ads-logo.png', '/godrej-interio-logo.svg'],
   },
   {
     name: 'Prof. Vishal Singh',
     title: 'Director & Co-founder',
     details: 'Associate Professor, DM, IISc Bengaluru\nPI: Impact Lab',
     image: '/VS.png',
-    logos: ['/iisc.png', '/sydney.png'],
+    logos: ['/iisc.png', '/sydney.svg'],
   },
 ];
 

@@ -1,4 +1,4 @@
-.anno-hero {
+  .anno-hero {
     position: relative;
     width: 100%;
     
@@ -13,12 +13,13 @@
     width: 50%;
     height: auto;
     margin-left: 40%;
-    
+    max-width: 100%; /* <-- THE FIX */
     display: block;
     border-radius: 32px;
     object-fit: cover;
   }
   
+
   /* Overlay text */
   .anno-overlay {
     position: absolute;
@@ -49,8 +50,17 @@
     font-size: 16px;
     line-height: 1.4;
     margin-bottom: 16px;
+    overflow-wrap: break-word; /* <-- ADD THIS LINE */
   }
   
+  .anno-price {
+    font-size: 20px; /* Or whatever size you like */
+    font-weight: 700;
+    color: #178E5E; /* Example color */
+    margin: 16px 0;
+    text-align: center; /* Already set by overlay, but good to be explicit */
+  }
+
   .anno-buttons {
     display: flex;
     gap: 10px;
@@ -88,6 +98,8 @@
     .anno-image {
       margin-left: 0%;
       width: 100%;
+      max-width: 100%; /* <-- THE FIX */
+      height: auto;     /* <-- Add this to maintain aspect ratio */
     }
 
     .anno-title {
@@ -98,6 +110,7 @@
       display: block;
       border-radius: 0px;
       object-fit: cover;
+      max-width: 100%; /* <-- THE FIX */
     }
     .anno-intro {
       font-size: 16px;
@@ -105,6 +118,7 @@
   
     .anno-subtitle {
       font-size: 14px;
+      overflow-wrap: break-word; 
     }
   
     .anno-btn {

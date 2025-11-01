@@ -19,12 +19,12 @@ const AnnoAirHero: React.FC = () => {
         <img className="anno-logo" src='/anno-AIR.png' alt="anno Air"  />
         <p className="anno-subtitle">
           Grow 44 Plants  <br />
-          Footprint: 80cm x43cm (2'7" x 1'5") <br />
-          Height: 160cm (5'3") <br /><br />
+          Footprint: 80cm x 43cm - 2'7" x 1'5" <br />
+          Height: 160cm 5'3" <br /><br />
           Integrated with Special HEPA filters <br />
           to actively purify your indoor air.
         </p>
-        <h3>OFFER PRICE: INR 54,999</h3>
+        <h3 className="anno-price">OFFER PRICE: INR 54,999</h3>
         <div className="anno-buttons">
           <button className="anno-btn install" onClick={handlePreBookClick}>Pre-Book</button>
         </div>

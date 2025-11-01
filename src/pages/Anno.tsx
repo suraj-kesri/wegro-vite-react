@@ -4,6 +4,7 @@ import Banner from "../components/banner/banner";
 import Image from "../components/image/image";
 import AnnoAirHero from "../components/annoHero/AnnoAirHero";
 import AnnoMaxHero from "../components/annoHero/AnnoMaxHero";
+
 const Anno: React.FC = () => {
   return (
     <>

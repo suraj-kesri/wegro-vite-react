@@ -24,7 +24,7 @@ const AnnoMaxHero: React.FC = () => {
           Integrated with Special HEPA filters <br />
           to actively purify your indoor air.
         </p>
-        <h3>OFFER PRICE: INR 74,999</h3>
+        <h3 className="anno-price">OFFER PRICE: INR 54,999</h3>
         <div className="anno-buttons">
           <button className="anno-btn install" onClick={handlePreBookClick}>Pre-Book</button>
         </div>

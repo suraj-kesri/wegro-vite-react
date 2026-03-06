@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: auto;
     overflow: hidden;
     background-color: #fff;
@@ -13,7 +13,7 @@
   /* Common image styling */
   .hero-image {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: auto;
     object-fit: cover;
     top: 0;

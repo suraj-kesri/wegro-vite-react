@@ -19,14 +19,14 @@ const AnnoMaxHero: React.FC = () => {
         <img className="anno-logo" src='/anno-MAX.png' alt="anno Max"  />
         <p className="anno-subtitle">
           Grow 74 Plants  <br />
-          Footprint: 80cm x43cm (2'7" x 1'5") <br />
+          Footprint: 80cm x 43cm (2'7" x 1'5") <br />
           Height: 190cm (6'4") <br /><br />
           Integrated with Special HEPA filters <br />
           to actively purify your indoor air.
         </p>
         
         <div className="anno-buttons">
-          <button className="anno-btn install" onClick={handlePreBookClick}>Pre-Book</button>
+          <button type="button" className="anno-btn install" onClick={handlePreBookClick}>Pre-Book</button>
         </div>
       </div>
     </section>

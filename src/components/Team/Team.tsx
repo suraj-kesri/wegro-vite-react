@@ -1,12 +1,17 @@
 import React from 'react';
 import './Team.css';
 
+interface TeamLogo {
+  src: string;
+  alt: string;
+}
+
 interface TeamMember {
   name: string;
   title: string;
   details: string;
   image: string;
-  logos: string[];
+  logos: TeamLogo[];
 }
 
 const teamMembers: TeamMember[] = [
@@ -15,21 +20,30 @@ const teamMembers: TeamMember[] = [
     title: 'Director & Co-founder',
     details: 'Product Designer (IISc) & Mechanical Engineer\nM.Des., B.Tech.',
     image: '/SKesri.png',
-    logos: ['/Siemens_AG_logo.svg', '/carelon.png'],
+    logos: [
+      { src: '/Siemens_AG_logo.svg', alt: 'Siemens' },
+      { src: '/carelon.png', alt: 'Carelon' },
+    ],
   },
   {
     name: 'Sunandan Paul',
     title: 'Director & Co-founder',
     details: 'Product Designer (IISc) & Architect\nM.Des., B.Arch.',
     image: '/SPaul.png',
-    logos: ['/ads-logo.png', '/godrej-interio-logo.svg'],
+    logos: [
+      { src: '/ads-logo.png', alt: 'ADS' },
+      { src: '/godrej-interio-logo.svg', alt: 'Godrej Interio' },
+    ],
   },
   {
     name: 'Prof. Vishal Singh',
     title: 'Director & Co-founder',
     details: 'Associate Professor, DM, IISc Bengaluru\nPI: Impact Lab',
     image: '/VS.png',
-    logos: ['/iisc.png', '/sydney.svg'],
+    logos: [
+      { src: '/iisc.png', alt: 'Indian Institute of Science' },
+      { src: '/sydney.svg', alt: 'University of Sydney' },
+    ],
   },
 ];
 
@@ -46,8 +60,13 @@ const Team: React.FC = () => {
             <p className="team-role">{member.title}</p>
             <p className="team-details">{member.details}</p>
             <div className="team-logos">
-              {member.logos.map((logo, i) => (
-                <img key={i} src={logo} alt="logo" className="team-logo" />
+              {member.logos.map((logo) => (
+                <img
+                  key={logo.src}
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="team-logo"
+                />
               ))}
             </div>
           </div>

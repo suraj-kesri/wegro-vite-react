@@ -27,8 +27,8 @@ const AnnoHero: React.FC = () => {
           <strong> better Urban living.</strong>
         </p>
         <div className="anno-buttons">
-          <button className="anno-btn install" onClick={handlePreBookClick}>Pre-Book</button>
-          <button className="anno-btn explore" onClick={handleExploreClick}>Explore</button>
+          <button type="button" className="anno-btn install" onClick={handlePreBookClick}>Pre-Book</button>
+          <button type="button" className="anno-btn explore" onClick={handleExploreClick}>Explore</button>
         </div>
       </div>
     </section>

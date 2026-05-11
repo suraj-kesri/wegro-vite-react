@@ -37,7 +37,7 @@ const Anno: React.FC = () => {
         />
         <Image 
             src="/ANNO Ren 7.png" 
-            alt="Family preparing food in kitchen"
+            alt="Anno indoor farming pod in a living space"
         />
     </>
   );

@@ -3,7 +3,7 @@ import Banner from "../components/banner/banner";
 import NurchHero from "../components/nurchHero/NurchHero";
 import AnnoHero from "../components/annoHero/AnnoHero";
 import Hero from "../components/hero/hero";
-import Image from "../components/image/image.tsx";
+import Image from "../components/image/image";
 
 const Home: React.FC = () => {
   return (
@@ -13,12 +13,12 @@ const Home: React.FC = () => {
       <AnnoHero />
       <Image 
         src="/ANNO Ren 7.png" 
-        alt="Family preparing food in kitchen"
+        alt="Anno indoor farming pod in a living space"
       />
       <NurchHero />
       <Image 
         src="/EDITV2.png" 
-        alt="Family enjoying balcony"
+        alt="Nurch smart green railing on a balcony"
       />
       <Banner
         desktopSrc="/banner-desktop.png"

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
-import { useNavigate } from "react-router-dom";
 import logo from "/wegro-logo-white.svg"; // adjust path if needed
 
 const Header: React.FC = () => {
@@ -31,14 +30,25 @@ const Header: React.FC = () => {
         </div>
 
         {/* Hamburger Icon */}
-        <button className="menu-toggle" onClick={toggleMenu}>
+        <button
+          type="button"
+          className="menu-toggle"
+          onClick={toggleMenu}
+          aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+        >
           <span className={menuOpen ? "bar open" : "bar"}></span>
           <span className={menuOpen ? "bar open" : "bar"}></span>
           <span className={menuOpen ? "bar open" : "bar"}></span>
         </button>
 
         {/* Navigation */}
-        <nav className={`nav ${menuOpen ? "open" : ""}`}>
+        <nav
+          id="primary-navigation"
+          className={`nav ${menuOpen ? "open" : ""}`}
+          aria-label="Main"
+        >
           <ul className="links">
             <li>
               <Link to="/" onClick={closeMenu}>Home</Link>

@@ -22,12 +22,12 @@ const NurchHero: React.FC = () => {
         <h4 className="nurch-intro">Meet</h4>
         <img className="nurch-logo" src='/nurch-logo.png' alt="Nurch Balcony"  />
         <p className="nurch-subtitle">
-          World's first <strong></strong> Aeroponics Integrated <br />
+          <strong>World&apos;s first</strong> Aeroponics Integrated <br />
           Structural Railing Systems.
         </p>
         <div className="nurch-buttons">
-          <button className="nurch-btn install" onClick={handlePreBookClick}>Order Now</button>
-          <button className="nurch-btn explore" onClick={handleExploreClick}>Explore</button>
+          <button type="button" className="nurch-btn install" onClick={handlePreBookClick}>Order Now</button>
+          <button type="button" className="nurch-btn explore" onClick={handleExploreClick}>Explore</button>
         </div>
       </div>
     </section>

@@ -26,7 +26,7 @@ const AnnoAirHero: React.FC = () => {
         </p>
         
         <div className="anno-buttons">
-          <button className="anno-btn install" onClick={handlePreBookClick}>Pre-Book</button>
+          <button type="button" className="anno-btn install" onClick={handlePreBookClick}>Pre-Book</button>
         </div>
       </div>
     </section>

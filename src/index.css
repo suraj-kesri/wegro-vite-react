@@ -26,19 +26,24 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-content: center;
   min-width: 320px;
   min-height: 100vh;
   width: 100%;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
 }
 
 h1 {
   font-size: 2.4rem;
   line-height: 1.1;
   text-align: center;
+  color: #808080;
   margin-top: 5rem;
-  
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 button {
@@ -74,7 +79,7 @@ button:focus-visible {
 }
 @media (max-width: 600px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.6em;
     margin-left: 2rem;
     margin-right: 2rem;
   }

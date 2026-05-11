@@ -6,7 +6,10 @@ interface ImageSectionProps {
   alt?: string;
 }
 
-const ImageSection: React.FC<ImageSectionProps> = ({ src, alt = '' }) => {
+const ImageSection: React.FC<ImageSectionProps> = ({
+  src,
+  alt = "Nurch smart green railing product view",
+}) => {
   return (
     <div className="image-section">
       <img src={src} alt={alt} className="image-section-img" />

@@ -50,6 +50,18 @@
     border: none;
     cursor: pointer;
     padding: 0; /* Good practice to reset button padding */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .menu-toggle:focus,
+  .menu-toggle:focus-visible,
+  .menu-toggle:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .menu-toggle::-moz-focus-inner {
+    border: 0;
   }
   
   .menu-toggle .bar {
@@ -70,10 +82,6 @@
   .menu-toggle .bar.open:nth-child(3) {
     transform: rotate(-45deg) translateY(-6px);
   }
-  
-  button:focus-visible {
-    outline: none;
-  }
 
   /* MOBILE STYLES */
   @media (max-width: 768px) {
@@ -83,11 +91,6 @@
       justify-content: space-between; /* Space them out */
       width: 24px;
       height: 18px;
-      outline: none important;
-    }
-    button:focus,
-    button:focus-visible {
-      outline: 0px auto -webkit-focus-ring-color;
     }
     .nav {
       position: absolute;

@@ -1,0 +1,104 @@
+.leafpanel-home-hero {
+  position: relative;
+  width: min(100%, 1200px);
+  min-height: 520px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 32px;
+  background: #eff2ed;
+}
+
+.leafpanel-home-image {
+  display: block;
+  width: 58%;
+  height: auto;
+  margin-left: auto;
+  object-fit: contain;
+}
+
+.leafpanel-home-overlay {
+  position: absolute;
+  top: 16%;
+  left: 7%;
+  z-index: 1;
+  display: flex;
+  width: min(40%, 420px);
+  flex-direction: column;
+  align-items: flex-start;
+  color: #053036;
+}
+
+.leafpanel-home-intro {
+  margin: 0;
+  font-family: "IBM Plex Sans Italic", Calibri, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.leafpanel-home-title {
+  margin: 4px 0 12px;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1;
+}
+
+.leafpanel-home-subtitle {
+  max-width: 320px;
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.leafpanel-home-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.leafpanel-home-btn {
+  padding: 8px 18px;
+  border: 0;
+  border-radius: 36px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.leafpanel-home-btn.order {
+  background: #178e5e;
+  color: #fff;
+}
+
+.leafpanel-home-btn.explore {
+  background: #e0e0e0;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .leafpanel-home-hero {
+    min-height: 0;
+    border-radius: 24px;
+  }
+
+  .leafpanel-home-image {
+    width: 100%;
+    max-height: 520px;
+    object-fit: contain;
+  }
+
+  .leafpanel-home-overlay {
+    position: static;
+    width: auto;
+    padding: 28px 24px 32px;
+    background: #eff2ed;
+    align-items: center;
+    text-align: center;
+  }
+
+  .leafpanel-home-subtitle {
+    max-width: 360px;
+  }
+
+  .leafpanel-home-buttons {
+    justify-content: center;
+  }
+}

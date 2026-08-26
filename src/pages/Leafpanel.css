@@ -1,0 +1,1296 @@
+.leafpanel-page {
+  --ink: #053036;
+  --cream: #f5f2e7;
+  --green: #178e5e;
+  color: var(--ink);
+  background: var(--cream);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+.leafpanel-page h1,
+.leafpanel-page h2,
+.leafpanel-page p {
+  margin: 0;
+}
+.lp-section {
+  padding: clamp(4rem, 9vw, 9rem) max(5vw, calc((100% - 1520px) / 2));
+}
+.leafpanel-hero {
+  min-height: min(810px, calc(100vh - 62px));
+  position: relative;
+  display: grid;
+  place-items: center;
+  color: var(--cream);
+  background: #062f35;
+}
+.leafpanel-hero-image,
+.leafpanel-hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.leafpanel-hero-image {
+  filter: saturate(0.85);
+  transform: scale(1.01);
+}
+.leafpanel-hero-shade {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.52),
+    rgba(0, 0, 0, 0.1) 65%
+  );
+}
+.leafpanel-hero-copy {
+  position: relative;
+  width: min(82%, 940px);
+  margin-left: -12%;
+  align-self: center;
+}
+.leafpanel-hero-copy span {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: 600;
+}
+.leafpanel-hero h1 {
+  font-size: clamp(4.5rem, 11.5vw, 12rem);
+  line-height: 0.85;
+  letter-spacing: -0.09em;
+  font-weight: 200;
+  margin: 0.2rem 0 2.4rem;
+}
+.leafpanel-hero-copy p {
+  font-size: clamp(1.1rem, 2vw, 1.7rem);
+  margin-left: 36%;
+  max-width: 320px;
+  text-align: right;
+}
+.leafpanel-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  background: var(--green);
+  color: white !important;
+  text-decoration: none;
+  font-weight: 700;
+}
+.leafpanel-intro {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 0.65fr;
+  gap: 3rem;
+  align-items: center;
+  background: var(--cream);
+}
+.leafpanel-quote {
+  align-self: start;
+}
+.leafpanel-quote span {
+  font-size: 7rem;
+  font-weight: bold;
+  line-height: 0.4;
+}
+.leafpanel-page h2 {
+  font-size: clamp(2.5rem, 5vw, 5.7rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  font-weight: 300;
+}
+.leafpanel-quote h2 {
+  font-size: clamp(2.3rem, 4.8vw, 4.8rem);
+}
+.leafpanel-intro-copy {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.leafpanel-intro-copy p + p {
+  margin-top: 1.2rem;
+}
+.leafpanel-attribution {
+  font-size: 0.85rem;
+  margin-bottom: 2.2rem;
+}
+.leafpanel-intro-gallery {
+  display: grid;
+  gap: 1rem;
+}
+.leafpanel-intro-gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.leafpanel-problem {
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(4, 43, 44, 0.94), rgba(4, 43, 44, 0.67)),
+    url("/leafpanel/standout.jpeg") center/cover;
+  color: var(--cream);
+}
+.leafpanel-problem-content {
+  width: min(86%, 960px);
+  margin: 0 auto;
+}
+.eyebrow {
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.leafpanel-problem h2 {
+  max-width: 700px;
+  margin: 1rem 0 2.6rem;
+}
+.leafpanel-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.leafpanel-stats div {
+  display: grid;
+  gap: 0.5rem;
+  border-top: 1px solid #d9dfcc;
+  padding-top: 0.8rem;
+}
+.leafpanel-stats strong {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.leafpanel-stats span {
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+.leafpanel-text-link {
+  color: var(--cream) !important;
+  display: inline-block;
+  margin-top: 3rem;
+}
+.leafpanel-details {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 5vw, 6rem);
+  align-items: center;
+  background: var(--cream);
+}
+.leafpanel-details-copy > p:not(.eyebrow) {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 500px;
+  margin: 1rem 0;
+}
+.leafpanel-steps {
+  display: flex;
+  gap: clamp(1rem, 2vw, 2.5rem);
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.leafpanel-steps span {
+  display: grid;
+  min-width: 5.5rem;
+  gap: 0.45rem;
+  justify-items: center;
+  color: var(--ink);
+  text-align: center;
+}
+.leafpanel-steps b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  width: 2.9rem;
+  height: 2.9rem;
+  text-align: center;
+  line-height: 1;
+  font-weight: 300;
+  background: #b1d9d0;
+}
+.leafpanel-steps b svg {
+  width: 1.55rem;
+  height: 1.55rem;
+  fill: currentColor;
+}
+.leafpanel-steps small {
+  display: block;
+  color: #52615e;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  text-transform: none;
+  font-weight: 400;
+}
+.leafpanel-product-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 610px;
+  background: var(--cream);
+  overflow: hidden;
+}
+.leafpanel-product-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.leafpanel-product-callout {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  color: var(--ink);
+  font-size: 0.8rem;
+  line-height: 1.05;
+}
+.leafpanel-product-callout::before {
+  content: "";
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--green);
+}
+.leafpanel-product-callout::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: var(--green);
+  transform-origin: left center;
+}
+.leafpanel-product-callout span {
+  display: block;
+  background: var(--cream);
+}
+.leafpanel-product-callout em {
+  display: block;
+  font-size: 0.68rem;
+  line-height: 1.05;
+}
+.callout-care {
+  top: 22%;
+  left: 6%;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  text-align: right;
+}
+.callout-care::after {
+  top: 50%;
+  left: 100%;
+  width: 8rem;
+  transform: rotate(-35deg);
+}
+.callout-light {
+  top: 17%;
+  right: 2%;
+  gap: 0.5rem;
+}
+.callout-light::after {
+  top: 50%;
+  right: 100%;
+  width: 8rem;
+  transform: rotate(25deg);
+  transform-origin: right center;
+}
+.callout-plants {
+  top: 47%;
+  right: 0;
+  gap: 0.5rem;
+}
+.callout-plants::after {
+  top: 50%;
+  right: 100%;
+  width: 5rem;
+  transform: rotate(5deg);
+  transform-origin: right center;
+}
+.callout-irrigation {
+  bottom: 35%;
+  left: 3%;
+  gap: 0.5rem;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.callout-irrigation::after {
+  top: 50%;
+  left: 100%;
+  width: 7rem;
+  transform: rotate(25deg);
+}
+.callout-tank {
+  right: 0;
+  bottom: 19%;
+  gap: 0.5rem;
+}
+.callout-tank::after {
+  top: 50%;
+  right: 100%;
+  width: 7rem;
+  transform: rotate(-10deg);
+  transform-origin: right center;
+}
+.leafpanel-science {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 0 max(5vw, calc((100% - 1520px) / 2));
+  background: #f5f2e7;
+  color: var(--ink);
+  align-items: center;
+}
+.leafpanel-science > div > p:not(.eyebrow) {
+  max-width: 520px;
+  line-height: 1.6;
+  margin-top: 1.5rem;
+}
+.leafpanel-science > div {
+  padding: clamp(4rem, 9vw, 9rem) 0;
+}
+.leafpanel-science > img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+  object-position: center;
+  background: white;
+}
+.leafpanel-metrics {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+.leafpanel-metrics span {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.leafpanel-metrics b {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+.leafpanel-compare {
+  display: grid;
+  grid-template-columns: minmax(280px, 1.15fr) minmax(170px, 0.55fr) minmax(320px, 1fr);
+  gap: 0;
+  align-items: stretch;
+  background: var(--cream);
+}
+.leafpanel-compare-image {
+  position: relative;
+  align-self: center;
+}
+.leafpanel-compare-image img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+}
+.leafpanel-compare-image p {
+  position: absolute;
+  top: 3%;
+  left: 20%;
+  font-size: clamp(0.85rem, 1.3vw, 1.25rem);
+  font-style: italic;
+  transform: rotate(3deg);
+}
+.leafpanel-compare-old-way {
+  align-self: center;
+  padding-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+.leafpanel-compare-heading {
+  min-height: 8rem;
+  padding-right: 1.5rem;
+}
+.leafpanel-compare-old-table {
+  padding-top: 1.5rem;
+}
+.leafpanel-compare-old-row {
+  display: flex;
+  min-height: 4.7rem;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid #789b28;
+  padding: 0 1.5rem 0 0;
+  color: var(--ink);
+  font-size: 0.82rem;
+  line-height: 1.2;
+  text-align: right;
+}
+.leafpanel-compare-panel {
+  align-self: center;
+  padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.1rem, 2vw, 1.8rem);
+  border-radius: 1.5rem;
+  background: var(--ink);
+  color: var(--cream);
+}
+.leafpanel-compare-panel h2 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(2.8rem, 4.2vw, 4.6rem);
+  line-height: 0.95;
+  font-weight: 300;
+}
+.leafpanel-compare-table {
+  border-top: 1px solid #789b28;
+}
+.leafpanel-compare-row {
+  display: grid;
+  min-height: 4.7rem;
+  align-content: center;
+  border-bottom: 1px solid #789b28;
+  padding: 0.85rem 0;
+  font-size: 1rem;
+}
+.leafpanel-compare-row div {
+  display: grid;
+  min-width: 0;
+  gap: 0.35rem;
+}
+.leafpanel-compare-row b {
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+.leafpanel-compare-row small {
+  font-size: 0.72rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+.leafpanel-plants {
+  background: #fff;
+}
+.leafpanel-plants-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 4rem max(5vw, calc((100% - 1520px) / 2)) 2rem;
+}
+.leafpanel-plants-heading h2 {
+  font-size: 5rem;
+}
+.leafpanel-plants-heading p {
+  max-width: 390px;
+  line-height: 1.5;
+}
+.leafpanel-plant-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.leafpanel-plant-grid figure,
+.leafpanel-finishes figure,
+.leafpanel-addons figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+.leafpanel-plant-grid img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.leafpanel-plant-grid figure:hover img {
+  transform: scale(1.04);
+}
+.leafpanel-plant-grid figcaption {
+  padding: 1rem;
+  background: var(--cream);
+  font-size: 1.05rem;
+}
+.leafpanel-plant-grid figcaption span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.25rem;
+}
+.leafpanel-plant-mosaic {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(130px, 12vw);
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.leafpanel-plant-mosaic > * {
+  min-width: 0;
+}
+.leafpanel-plant-category,
+.leafpanel-plant-list,
+.leafpanel-plants-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem;
+  color: var(--ink);
+}
+.leafpanel-plant-category {
+  align-items: flex-end;
+  gap: 0.5rem;
+  text-align: right;
+}
+.leafpanel-plant-category strong {
+  font-size: clamp(0.75rem, 1.4vw, 1.2rem);
+  font-style: italic;
+  line-height: 1.05;
+}
+.leafpanel-plant-category span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.leafpanel-plant-category.fancy {
+  background: #aed5c9;
+}
+.leafpanel-plant-category.flowering {
+  align-items: flex-start;
+  text-align: left;
+  background: #aed5c9;
+}
+.leafpanel-plant-category.air {
+  background: #afc95d;
+}
+.leafpanel-plant-category.edibles {
+  align-items: flex-start;
+  text-align: left;
+  background: #61b58e;
+}
+.leafpanel-plants-intro {
+  grid-column: span 2;
+  background: #b8d2e2;
+}
+.leafpanel-plants-intro h2 {
+  font-size: clamp(2.6rem, 4.8vw, 5rem);
+  font-weight: 300;
+  line-height: 1;
+}
+.leafpanel-plants-intro p {
+  max-width: 290px;
+  margin-top: 0.8rem;
+  border-top: 1px solid var(--ink);
+  padding-top: 0.6rem;
+  font-size: clamp(0.72rem, 1vw, 0.95rem);
+  line-height: 1.2;
+}
+.leafpanel-plant-card {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  background: var(--cream);
+}
+.leafpanel-plant-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.leafpanel-plant-card figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.45rem;
+  background: rgba(245, 242, 231, 0.78);
+  color: var(--ink);
+  font-size: 0.75rem;
+}
+.leafpanel-plant-list {
+  background: #aed5c9;
+  font-size: clamp(0.7rem, 1.05vw, 0.95rem);
+  line-height: 1.05;
+}
+.leafpanel-plant-list.centered {
+  align-items: center;
+  text-align: center;
+}
+.leafpanel-plant-list.muted {
+  background: #afc95d;
+}
+.leafpanel-plant-mosaic > .pothos { grid-column: 2; }
+.leafpanel-plant-mosaic > .birkin { grid-column: 4; }
+.leafpanel-plant-mosaic > .marantus { grid-column: 6; }
+.leafpanel-plant-mosaic > .petunia { grid-column: 3; }
+.leafpanel-plant-mosaic > .aglaonema { grid-column: 5; }
+.leafpanel-plant-mosaic > .syngonium { grid-column: 2; }
+.leafpanel-plant-mosaic > .snake { grid-column: 4; }
+.leafpanel-plant-mosaic > .cherry { grid-column: 6; }
+.leafpanel-plant-mosaic > .basil { grid-column: 1; }
+.leafpanel-plant-mosaic > .tomato { grid-column: 3; }
+.leafpanel-plant-mosaic > .flowering { grid-column: 6; }
+.leafpanel-plant-mosaic > .air { grid-column: 1; }
+.leafpanel-plant-mosaic > .edibles { grid-column: 6; }
+.leafpanel-configure {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 5rem;
+  background: var(--cream);
+}
+.leafpanel-configure-copy p {
+  line-height: 1.55;
+  margin-top: 1.5rem;
+  max-width: 390px;
+}
+.leafpanel-configure-content > .eyebrow {
+  border-bottom: 1px solid #9ca9a4;
+  padding-bottom: 0.7rem;
+  margin-top: 2rem;
+}
+.leafpanel-configure-content > .eyebrow:first-child {
+  margin-top: 0;
+}
+.leafpanel-finishes,
+.leafpanel-addons {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.2rem 0;
+}
+.leafpanel-finishes figure {
+  flex: 1;
+}
+.leafpanel-finishes img {
+  height: 210px;
+  width: 100%;
+  object-fit: contain;
+}
+.leafpanel-finishes figcaption,
+.leafpanel-addons figcaption {
+  padding: 0.5rem 0;
+  text-transform: lowercase;
+}
+.leafpanel-addons figure {
+  width: 32%;
+}
+.leafpanel-addons img {
+  display: block;
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+}
+.leafpanel-sizes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-top: 1.2rem;
+}
+.leafpanel-sizes div {
+  padding: 1.2rem;
+  border: 1px solid #b4bdb9;
+}
+.leafpanel-sizes b,
+.leafpanel-sizes span {
+  display: block;
+}
+.leafpanel-sizes span {
+  margin-top: 0.75rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+.leafpanel-cta {
+  min-height: 500px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--cream);
+  background:
+    linear-gradient(rgba(5, 48, 54, 0.7), rgba(5, 48, 54, 0.8)),
+    url("/leafpanel/intro.jpeg") center/cover;
+}
+.leafpanel-cta h2 {
+  max-width: 760px;
+  margin: 1rem auto;
+}
+.leafpanel-client-logo-placeholders {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  width: min(100%, 420px);
+  margin: 1.5rem auto 0;
+}
+.leafpanel-client-logo-placeholder {
+  display: grid;
+  place-items: center;
+  width: 7rem;
+  height: 3rem;
+  border: 0;
+  background: transparent;
+}
+.leafpanel-client-logo-placeholder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.leafpanel-client-logo-placeholder img.leafpanel-client-logo-16 {
+  width: 72.5%;
+  height: 72.5%;
+}
+.leafpanel-past-clients {
+  padding: clamp(3.5rem, 7vw, 6rem) 1.25rem;
+  background: #fff;
+  color: var(--ink);
+  text-align: center;
+}
+.leafpanel-past-clients .leafpanel-client-logo-placeholders {
+  width: min(100%, 760px);
+  gap: clamp(2rem, 7vw, 6rem);
+}
+.leafpanel-past-clients .leafpanel-client-logo-placeholder {
+  width: 10rem;
+  height: 5rem;
+}
+.leafpanel-cta .leafpanel-button {
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 800px) {
+  .leafpanel-hero {
+    min-height: 620px;
+  }
+  .leafpanel-hero-copy {
+    margin-left: 0;
+  }
+  .leafpanel-hero-copy p {
+    margin-left: 0;
+    text-align: left;
+  }
+  .leafpanel-intro,
+  .leafpanel-details,
+  .leafpanel-science,
+  .leafpanel-configure,
+  .leafpanel-compare {
+    grid-template-columns: 1fr;
+  }
+  .leafpanel-intro-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .leafpanel-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .leafpanel-product-stage {
+    min-height: 520px;
+    margin: 0 -1.25rem;
+  }
+  .leafpanel-product-image {
+    width: 100%;
+  }
+  .leafpanel-product-callout {
+    font-size: 0.68rem;
+  }
+  .leafpanel-science {
+    padding: 0 1.25rem;
+  }
+  .leafpanel-science > div {
+    padding: 3.5rem 0;
+  }
+  .leafpanel-science > img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .leafpanel-product-callout::after {
+    display: none;
+  }
+  .callout-care {
+    top: 14%;
+    left: 4%;
+  }
+  .callout-light {
+    top: 10%;
+    right: 3%;
+  }
+  .callout-plants {
+    top: 42%;
+    right: 2%;
+  }
+  .callout-irrigation {
+    bottom: 34%;
+    left: 3%;
+  }
+  .callout-tank {
+    right: 2%;
+    bottom: 13%;
+  }
+  .leafpanel-compare-heading {
+    grid-template-columns: 1fr;
+  }
+  .leafpanel-compare-panel {
+    border-radius: 1rem;
+  }
+  .leafpanel-compare-panel h2 {
+    font-size: clamp(2.6rem, 10vw, 4rem);
+  }
+  .leafpanel-compare-table {
+    width: 100%;
+  }
+  .leafpanel-compare-row {
+    min-height: 0;
+  }
+  .leafpanel-plants-heading {
+    display: grid;
+    gap: 1rem;
+  }
+  .leafpanel-plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .leafpanel-plant-grid img {
+    height: 210px;
+  }
+  .leafpanel-plant-mosaic {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 170px;
+    border-radius: 0.75rem;
+  }
+  .leafpanel-plant-mosaic > * {
+    grid-column: auto !important;
+  }
+  .leafpanel-plant-mosaic > .leafpanel-plants-intro {
+    grid-column: span 2 !important;
+  }
+  .leafpanel-plant-category,
+  .leafpanel-plant-list,
+  .leafpanel-plants-intro {
+    padding: 1rem;
+  }
+  .leafpanel-configure {
+    gap: 3rem;
+  }
+  .leafpanel-addons figure {
+    width: 46%;
+  }
+}
+@media (max-width: 480px) {
+  .lp-section {
+    padding: 3.5rem 1.25rem;
+  }
+  .leafpanel-hero-copy {
+    width: 85%;
+  }
+  .leafpanel-stats {
+    gap: 1.2rem;
+  }
+  .leafpanel-details-copy > p:not(.eyebrow) {
+    font-size: 1.1rem;
+  }
+  .leafpanel-steps {
+    gap: 0.6rem;
+  }
+  .leafpanel-science {
+    padding: 0 1.25rem;
+  }
+  .leafpanel-science > div {
+    padding: 3.5rem 0;
+  }
+  .leafpanel-science > img {
+    height: auto;
+    max-height: 360px;
+    object-fit: contain;
+  }
+  .leafpanel-metrics {
+    gap: 1rem;
+  }
+  .leafpanel-metrics b {
+    font-size: 1.8rem;
+  }
+  .leafpanel-compare-row {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+  .leafpanel-compare-table {
+    width: 100%;
+    margin-left: 0;
+  }
+  .leafpanel-compare-row > span {
+    text-align: left;
+  }
+  .leafpanel-plants-heading {
+    padding: 3rem 1.25rem 1.5rem;
+  }
+  .leafpanel-plants-heading h2 {
+    font-size: 3.5rem;
+  }
+  .leafpanel-plant-grid img {
+    height: 150px;
+  }
+  .leafpanel-plant-grid figcaption {
+    font-size: 0.85rem;
+  }
+  .leafpanel-finishes {
+    gap: 0.5rem;
+  }
+  .leafpanel-finishes img {
+    height: 125px;
+  }
+  .leafpanel-addons img {
+    height: 105px;
+  }
+  .leafpanel-sizes {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Figma node 1:120: Leafpanel hero artwork and composition */
+.leafpanel-hero {
+  height: clamp(680px, 56.25vw, 1080px);
+  min-height: 680px;
+  display: block;
+}
+.leafpanel-hero-image {
+  object-position: center;
+  filter: none;
+  transform: none;
+}
+.leafpanel-hero-shade {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0) 72%);
+}
+.leafpanel-hero-copy {
+  position: absolute;
+  left: 30.6%;
+  top: 32.1%;
+  width: 38.7%;
+  margin: 0;
+  text-align: left;
+}
+.leafpanel-hero-logo {
+  display: block;
+  width: clamp(5rem, 8vw, 9rem);
+  height: auto;
+  margin-bottom: 0.75rem;
+}
+.leafpanel-hero h1 {
+  color: var(--cream);
+  font-size: clamp(5.3rem, 10.45vw, 12.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.09em;
+  font-weight: 200;
+  margin: 0;
+  text-align: left;
+}
+.leafpanel-hero-copy p {
+  font-size: clamp(1.05rem, 1.46vw, 1.75rem);
+  line-height: 1.42;
+  margin: 1.1rem 0 0;
+  max-width: 100%;
+  text-align: left;
+}
+.leafpanel-button {
+  display: block;
+  width: max-content;
+}
+@media (max-width: 800px) {
+  .leafpanel-hero {
+    height: 680px;
+    min-height: 0;
+  }
+  .leafpanel-hero-copy {
+    left: 9%;
+    top: 32%;
+    width: 82%;
+  }
+  .leafpanel-hero-copy p {
+    margin-left: 0;
+    text-align: left;
+    max-width: 330px;
+  }
+}
+@media (max-width: 480px) {
+  .leafpanel-hero {
+    height: 560px;
+  }
+  .leafpanel-hero-copy {
+    top: 31%;
+  }
+  .leafpanel-hero h1 {
+    font-size: 4.7rem;
+  }
+}
+
+/* Figma node 1:130: editorial Leafpanel introduction */
+.leafpanel-intro {
+  /* Adjust these values to position and size each image within this section. */
+  --intro-detail-left: 31.9%;
+  --intro-detail-top: 21.7%;
+  --intro-detail-width: 19.1%;
+  --intro-detail-height: 20%;
+  --intro-detail-position: center 24%;
+  --intro-wide-left: 59.6%;
+  --intro-wide-top: 10.9%;
+  --intro-wide-width: 19.6%;
+  --intro-wide-height: 24.3%;
+  --intro-wide-position: center center;
+  --intro-tall-left: 74.8%;
+  --intro-tall-top: 13.9%;
+  --intro-tall-width: 16.4%;
+  --intro-tall-height: 42.6%;
+  --intro-tall-position: center center;
+  position: relative;
+  height: clamp(760px, 68vw, 1200px);
+  padding-bottom: clamp(1.5rem, 4vw, 4rem);
+  box-sizing: border-box;
+  overflow: hidden;
+  background: var(--cream);
+  color: var(--ink);
+}
+.leafpanel-intro-quote {
+  position: absolute;
+  left: 2.75%;
+  top: 33.5%;
+  font-size: clamp(8rem, 11vw, 13.1rem);
+  font-weight: 900;
+  line-height: 0.5;
+}
+.leafpanel-intro-message {
+  position: absolute;
+  left: clamp(2rem, 9.4vw, 9.4%);
+  top: clamp(20rem, 46%, 36rem);
+  width: min(49.2%, 52rem);
+}
+.leafpanel-intro-message h2 {
+  font-size: clamp(2.7rem, 4.17vw, 5rem);
+  line-height: 1.08;
+  letter-spacing: -0.06em;
+}
+.leafpanel-intro-message h2 em {
+  font-weight: 300;
+}
+.leafpanel-intro .leafpanel-attribution {
+  font-size: clamp(0.75rem, 1.04vw, 1.25rem);
+  margin: 1.1rem 0 1.75rem;
+}
+.leafpanel-intro-copy {
+  font-size: clamp(0.95rem, 1.25vw, 1.5rem);
+  line-height: 1.67;
+  max-width: 96%;
+  color: #121212;
+}
+.leafpanel-intro-copy p {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+.leafpanel-intro-copy p + p {
+  margin-top: 1.2rem;
+}
+.leafpanel-intro-copy em {
+  font-weight: 500;
+}
+.leafpanel-intro-gallery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  pointer-events: none;
+}
+.leafpanel-intro-gallery img {
+  position: absolute;
+  display: block;
+  object-fit: cover;
+}
+.leafpanel-intro-gallery .leafpanel-intro-detail {
+  left: var(--intro-detail-left);
+  top: var(--intro-detail-top);
+  width: var(--intro-detail-width);
+  height: var(--intro-detail-height);
+  object-position: var(--intro-detail-position);
+}
+.leafpanel-intro-gallery .leafpanel-intro-wide {
+  left: var(--intro-wide-left);
+  top: var(--intro-wide-top);
+  width: var(--intro-wide-width);
+  height: var(--intro-wide-height);
+  object-position: var(--intro-wide-position);
+}
+.leafpanel-intro-gallery .leafpanel-intro-tall {
+  left: var(--intro-tall-left);
+  top: var(--intro-tall-top);
+  width: var(--intro-tall-width);
+  height: var(--intro-tall-height);
+  object-position: var(--intro-tall-position);
+}
+@media (max-width: 800px) {
+  .leafpanel-intro {
+    aspect-ratio: auto;
+    height: auto;
+    min-height: 0;
+    padding: 4rem 1.25rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .leafpanel-intro-quote {
+    position: static;
+    font-size: 7rem;
+    height: 3rem;
+  }
+  .leafpanel-intro-message {
+    position: static;
+    width: auto;
+  }
+  .leafpanel-intro-message h2 {
+    font-size: clamp(2.4rem, 10vw, 4rem);
+  }
+  .leafpanel-intro-copy {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+  .leafpanel-intro-gallery {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+    height: 390px;
+  }
+  .leafpanel-intro-gallery img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .leafpanel-intro-detail {
+    display: none !important;
+  }
+  .leafpanel-intro-tall {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .leafpanel-intro-wide {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+@media (max-width: 480px) {
+  .leafpanel-intro {
+    padding-top: 3rem;
+  }
+  .leafpanel-intro-gallery {
+    height: 280px;
+  }
+  .leafpanel-intro .leafpanel-attribution {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+/* Figma node 1:141: workplace wellbeing problem section */
+.leafpanel-problem {
+  position: relative;
+  height: clamp(680px, 56.25vw, 1080px);
+  min-height: 680px;
+  display: block;
+  overflow: hidden;
+  background: #172c2d;
+  color: var(--cream);
+}
+.leafpanel-problem-background,
+.leafpanel-problem-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.leafpanel-problem-background {
+  object-fit: cover;
+  object-position: center;
+}
+.leafpanel-problem-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(4, 33, 36, 0.58) 0%,
+    rgba(4, 33, 36, 0.46) 49.8%,
+    rgba(4, 33, 36, 0) 50%
+  );
+}
+.leafpanel-problem-content {
+  position: absolute;
+  left: 5.5%;
+  top: 11.4%;
+  width: 39.95%;
+  margin: 0;
+}
+.leafpanel-problem-content h2 {
+  font-size: clamp(2.65rem, 3.65vw, 4.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+}
+.leafpanel-problem-callout {
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  margin: 1.05rem 0 !important;
+  padding: 1rem 2.2rem !important;
+  background: rgba(4, 42, 43, 0.78);
+  font-size: clamp(0.85rem, 1.04vw, 1.25rem) !important;
+  line-height: 1.25 !important;
+}
+.leafpanel-problem-label {
+  font-size: clamp(0.8rem, 1.04vw, 1.25rem) !important;
+  margin: 1rem 0 0.45rem !important;
+}
+.leafpanel-stats {
+  gap: 3.9vw;
+}
+.leafpanel-stats strong {
+  font-size: clamp(2.2rem, 2.7vw, 3.25rem);
+}
+.leafpanel-stats span {
+  font-size: clamp(0.72rem, 0.83vw, 1rem);
+}
+.leafpanel-problem .leafpanel-text-link {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0.5rem 1.35rem;
+  border-radius: 999px;
+  background: rgba(4, 42, 43, 0.8);
+  box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.22);
+  color: var(--cream) !important;
+  text-decoration: none;
+  font-size: clamp(0.75rem, 1.04vw, 1.25rem);
+}
+@media (max-width: 800px) {
+  .leafpanel-problem {
+    height: auto;
+    min-height: 720px;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+  }
+  .leafpanel-problem-background {
+    object-position: 62% center;
+  }
+  .leafpanel-problem-overlay {
+    background: rgba(4, 33, 36, 0.56);
+  }
+  .leafpanel-problem-content {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    margin: auto 1.25rem;
+    padding: 4rem 0;
+  }
+  .leafpanel-problem-callout {
+    padding: 1rem 1.2rem !important;
+  }
+  .leafpanel-stats {
+    gap: 1.3rem;
+  }
+  .leafpanel-problem .leafpanel-text-link {
+    position: static;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .leafpanel-problem-content h2 {
+    font-size: 2.45rem;
+  }
+  .leafpanel-stats strong {
+    font-size: 2.2rem;
+  }
+}

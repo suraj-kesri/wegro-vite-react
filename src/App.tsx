@@ -7,6 +7,7 @@ import Header from "./components/header/Header.tsx";
 import Home from "./pages/Home";
 import Anno from "./pages/Anno";
 import Nurch from "./pages/Nurch.tsx";
+import Leafpanel from "./pages/Leafpanel.tsx";
 import OurStory from "./pages/OurStory.tsx";
 import Footer from "./components/footer/footer.tsx";
 import ContactSection from "./components/contact/contactSection.tsx";
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/anno" element={<Anno />} />
         <Route path="/nurch" element={<Nurch />} />
+        <Route path="/leafpanel" element={<Leafpanel />} />
         <Route path="/ourstory" element={<OurStory/>} />
       </Routes>
       

@@ -17,6 +17,7 @@ export default function Footer() {
           <h3 className={styles.subHeading}>Quick Links</h3>
           <ul className={styles.links}>
           <li><Link to="/">Home</Link></li>
+            <li><Link to="/leafpanel">Leafpanel</Link></li>
             <li><Link to="/anno">Anno</Link></li>
             <li><Link to="/nurch">Nurch</Link></li>
             <li><Link to="/ourstory">Our Story</Link></li>

@@ -54,6 +54,9 @@ const Header: React.FC = () => {
               <Link to="/" onClick={closeMenu}>Home</Link>
             </li>
             <li>
+              <Link to="/leafpanel" onClick={closeMenu}>Leafpanel</Link>
+            </li>
+            <li>
               <Link to="/anno" onClick={closeMenu}>Anno</Link>
             </li>
             <li>

@@ -1,0 +1,40 @@
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #fff;
+  }
+  
+  .balcony-image {
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin: 0 148px; /* as you mentioned earlier */
+    transition: object-position 0.3s ease;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .balcony-image {
+      margin: 0 60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .balcony-image {
+      margin: 0 24px;
+      aspect-ratio: 3 / 4;
+      
+      object-position: 70% center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .balcony-image {
+      margin: 0 12px;
+      border-radius: 0px;
+    }
+  }
+  

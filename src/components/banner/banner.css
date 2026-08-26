@@ -1,0 +1,37 @@
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 24px;
+    
+  }
+  
+  /* Common image styles */
+  .banner-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* Show desktop by default */
+  .banner-image.desktop {
+    display: block;
+  }
+  
+  .banner-image.mobile {
+    display: none;
+  }
+  
+  /* Switch images based on screen size */
+  @media (max-width: 768px) {
+    .banner-image.desktop {
+      display: none;
+    }
+  
+    .banner-image.mobile {
+      display: block;
+    }
+  }
+  

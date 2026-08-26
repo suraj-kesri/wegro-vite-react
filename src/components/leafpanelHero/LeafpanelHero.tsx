@@ -10,6 +10,10 @@ const LeafpanelHero: React.FC = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const handleOrderClick = () => {
+    window.open("https://forms.gle/huRMTgAdArwFu6pj6", "_blank", "noopener,noreferrer");
+  };
+
   return (
     <section className="leafpanel-home-hero">
       <img
@@ -24,7 +28,7 @@ const LeafpanelHero: React.FC = () => {
           Smart plug-and-play greenwalls for healthier, greener spaces.
         </p>
         <div className="leafpanel-home-buttons">
-          <button type="button" className="leafpanel-home-btn order" onClick={handleExploreClick}>
+          <button type="button" className="leafpanel-home-btn order" onClick={handleOrderClick}>
             Order Now
           </button>
           <button type="button" className="leafpanel-home-btn explore" onClick={handleExploreClick}>

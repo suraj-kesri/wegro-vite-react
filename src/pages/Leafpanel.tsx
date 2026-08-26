@@ -33,7 +33,7 @@ const Leafpanel: React.FC = () => (
         <img className="leafpanel-hero-logo" src="/wegro-logo-white.svg" alt="Wegro" />
         <h1>leafpanel</h1>
         <p>Smart Plug &amp; Play Greenwalls</p>
-        <a href="#contact" className="leafpanel-button">Order Now</a>
+        <a href="https://forms.gle/huRMTgAdArwFu6pj6" target="_blank" rel="noreferrer" className="leafpanel-button">Order Now</a>
       </div>
     </section>
 
@@ -174,7 +174,7 @@ const Leafpanel: React.FC = () => (
     <section className="leafpanel-cta">
       <div>
         <h2>Ready to make your space greener?</h2>
-        <a href="#contact" className="leafpanel-button">Order Now</a>
+        <a href="https://forms.gle/huRMTgAdArwFu6pj6" target="_blank" rel="noreferrer" className="leafpanel-button">Order Now</a>
       </div>
      </section>
   </main>

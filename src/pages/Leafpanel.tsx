@@ -15,15 +15,6 @@ const plants = [
   ["/leafpanel/lettuce.png", "Lettuce", "Edibles"],
 ];
 
-const comparisons = [
-  ["Frequent Watering Hassle", "No Regular Watering Hassle!", "Automated watering system."],
-  ["Plants die from lack of light", "Healthy Plants even in the Dark!", "Powerful LED grow-lights."],
-  ["Plumbing Connection", "No Water Connection needed!", "Integrated tank with 3 weeks of storage."],
-  ["Leakage & Infra Damage", "No Leakage or Water Spills!", "Closed internal irrigation system."],
-  ["Soil, Dirt & Mess", "Neat, Clean & Soil-less!", "Hydroponic growing without soil."],
-  ["High operational cost", "Easiest Way to Maintain Greens!", "Easy nutrients and a growing service network."],
-];
-
 const Leafpanel: React.FC = () => (
   <main className="leafpanel-page">
     <section className="leafpanel-hero">
@@ -48,11 +39,11 @@ const Leafpanel: React.FC = () => (
           <p><strong>Leafpanel</strong> brings living greenery into the spaces where people work, meet, and gather.</p>
         </div>
       </div>
-      <div className="leafpanel-intro-gallery" aria-label="Leafpanel in use">
+      {/* <div className="leafpanel-intro-gallery" aria-label="Leafpanel in use">
         <img className="leafpanel-intro-detail" src="/leafpanel/intro-detail.png" alt="Leafpanel planting detail" />
         <img className="leafpanel-intro-wide" src="/leafpanel/intro-wide.png" alt="Leafpanel green wall in an interior" />
         <img className="leafpanel-intro-tall" src="/leafpanel/intro-tall.png" alt="Leafpanel green wall installation" />
-      </div>
+      </div> */}
     </section>
 
     <section className="leafpanel-problem">
@@ -100,7 +91,7 @@ const Leafpanel: React.FC = () => (
       <img src="/leafpanel/science.png" alt="Close-up of Leafpanel technology" />
     </section>
 
-    <section className="leafpanel-compare lp-section">
+    {/* <section className="leafpanel-compare lp-section">
       <div className="leafpanel-compare-image">
         <img src="/leafpanel/stand-out.png" alt="Regular planters and green walls with wilted plants" />
       </div>
@@ -116,35 +107,39 @@ const Leafpanel: React.FC = () => (
           {comparisons.map(([, leafpanelWay, note]) => <div className="leafpanel-compare-row" key={leafpanelWay}><b>{leafpanelWay}</b><small>{note}</small></div>)}
         </div>
       </div>
-    </section>
+    </section> */}
 
     <section className="leafpanel-plants">
-      <div className="leafpanel-plant-mosaic">
-        <div className="leafpanel-plant-category fancy"><strong>FANCY GREENS</strong><span>&gt;&gt;</span></div>
-        <figure className="leafpanel-plant-card pothos"><img src={plants[0][0]} alt={plants[0][1]} /><figcaption>{plants[0][1]}</figcaption></figure>
-        <div className="leafpanel-plant-list"><span>Chlorophytum</span><span>Chamaedorea Palm</span><span>Broken-heart</span><span>Stapelia</span></div>
-        <figure className="leafpanel-plant-card birkin"><img src={plants[3][0]} alt={plants[3][1]} /><figcaption>{plants[3][1]}</figcaption></figure>
-        <div className="leafpanel-plant-list muted"><span>Philodendron</span><span>Oxcardium</span><span>Syngonium</span></div>
-        <figure className="leafpanel-plant-card marantus"><img src={plants[6][0]} alt={plants[6][1]} /><figcaption>{plants[6][1]}</figcaption></figure>
-
-        <div className="leafpanel-plants-intro"><h2>Plants</h2><p>Choose from a diverse collection of plants, all compatible with the Wegro Leafpanel ecosystem.</p></div>
-        <figure className="leafpanel-plant-card petunia"><img src={plants[2][0]} alt={plants[2][1]} /><figcaption>{plants[2][1]}</figcaption></figure>
-        <div className="leafpanel-plant-list centered"><span>Petunia</span><span>Zinnia</span><span>Geranium</span></div>
-        <figure className="leafpanel-plant-card aglaonema"><img src={plants[9][0]} alt={plants[9][1]} /><figcaption>{plants[9][1]}</figcaption></figure>
-        <div className="leafpanel-plant-category flowering"><strong>FLOWERING<br />PLANTS</strong><span>&lt;&lt;</span></div>
-
-        <div className="leafpanel-plant-category air"><strong>AIR-<br />PURIFICATION</strong><span>&gt;&gt;</span></div>
-        <figure className="leafpanel-plant-card syngonium"><img src={plants[1][0]} alt={plants[1][1]} /><figcaption>{plants[1][1]}</figcaption></figure>
-        <div className="leafpanel-plant-list muted"><span>Philodendron</span><span>Oxcardium</span><span>Syngonium</span><span>ZZ Plant</span></div>
-        <figure className="leafpanel-plant-card snake"><img src={plants[7][0]} alt={plants[7][1]} /><figcaption>{plants[7][1]}</figcaption></figure>
-        <div className="leafpanel-plant-list centered"><span>Calathea</span><span>Maranta</span><span>Aglaonema</span></div>
-        <figure className="leafpanel-plant-card cherry"><img src={plants[4][0]} alt={plants[4][1]} /><figcaption>{plants[4][1]}</figcaption></figure>
-
-        <figure className="leafpanel-plant-card basil"><img src="/leafpanel/italian-basil.png" alt="Italian Basil" /><figcaption>Italian Basil</figcaption></figure>
-        <div className="leafpanel-plant-list centered"><span>Lemon Grass</span><span>Coriander</span><span>Rosemary</span><span>Spinach</span><span>Ajwain</span></div>
-        <figure className="leafpanel-plant-card tomato"><img src={plants[5][0]} alt="Cherry Tomato" /><figcaption>Cherry Tomato</figcaption></figure>
-        <div className="leafpanel-plant-list centered"><span>Lettuce</span><span>Mint</span><span>Parsley</span></div>
-        <div className="leafpanel-plant-category edibles"><strong>EDIBLES</strong><span>&lt;&lt;</span></div>
+      <div className="leafpanel-plants-intro"><p className="eyebrow">THE LEAFPANEL PLANT COLLECTION</p><h2>Plants</h2><p>Choose from a diverse collection of plants, all compatible with the Wegro Leafpanel ecosystem.</p></div>
+      <div className="leafpanel-plant-categories">
+        <article className="leafpanel-plant-category-group fancy">
+          <h3>Fancy greens</h3>
+          <div className="leafpanel-plant-cards">
+            {[plants[0], plants[3], plants[6]].map(([src, name]) => <figure className="leafpanel-plant-card" key={name}><img src={src} alt={name} /><figcaption>{name}</figcaption></figure>)}
+          </div>
+          <p className="leafpanel-plant-list">Chlorophytum <span>Chamaedorea Palm</span> <span>Broken-heart</span> <span>Stapelia</span></p>
+        </article>
+        <article className="leafpanel-plant-category-group air">
+          <h3>Air purification</h3>
+          <div className="leafpanel-plant-cards">
+            {[plants[1], plants[7], plants[4]].map(([src, name]) => <figure className="leafpanel-plant-card" key={name}><img src={src} alt={name} /><figcaption>{name}</figcaption></figure>)}
+          </div>
+          <p className="leafpanel-plant-list">Philodendron <span>Oxcardium</span> <span>Syngonium</span> <span>ZZ Plant</span> <span>Calathea</span> <span>Maranta</span></p>
+        </article>
+        <article className="leafpanel-plant-category-group flowering">
+          <h3>Flowering plants</h3>
+          <div className="leafpanel-plant-cards">
+            {[plants[2], plants[9]].map(([src, name]) => <figure className="leafpanel-plant-card" key={name}><img src={src} alt={name} /><figcaption>{name}</figcaption></figure>)}
+          </div>
+          <p className="leafpanel-plant-list">Petunia <span>Zinnia</span> <span>Geranium</span></p>
+        </article>
+        <article className="leafpanel-plant-category-group edibles">
+          <h3>Edibles</h3>
+          <div className="leafpanel-plant-cards">
+            {[plants[8], plants[5], plants[10]].map(([src, name]) => <figure className="leafpanel-plant-card" key={name}><img src={src} alt={name} /><figcaption>{name}</figcaption></figure>)}
+          </div>
+          <p className="leafpanel-plant-list">Lemon Grass <span>Coriander</span> <span>Rosemary</span> <span>Spinach</span> <span>Ajwain</span> <span>Lettuce</span> <span>Mint</span> <span>Parsley</span></p>
+        </article>
       </div>
     </section>
 

@@ -461,6 +461,7 @@
   overflow-wrap: anywhere;
 }
 .leafpanel-plants {
+  padding: clamp(3.5rem, 7vw, 7rem) max(5vw, calc((100% - 1520px) / 2));
   background: #fff;
 }
 .leafpanel-plants-heading {
@@ -510,11 +511,7 @@
   margin-bottom: 0.25rem;
 }
 .leafpanel-plant-mosaic {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: minmax(130px, 12vw);
-  overflow: hidden;
-  border-radius: 1rem;
+  display: none;
 }
 .leafpanel-plant-mosaic > * {
   min-width: 0;
@@ -559,9 +556,44 @@
   background: #61b58e;
 }
 .leafpanel-plants-intro {
-  grid-column: span 2;
-  background: #b8d2e2;
+  max-width: 520px;
+  padding: 0 0 2.5rem;
 }
+.leafpanel-plant-categories {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.leafpanel-plant-category-group {
+  min-width: 0;
+  padding: 1.25rem;
+  background: #aed5c9;
+}
+.leafpanel-plant-category-group.air { background: #afc95d; }
+.leafpanel-plant-category-group.flowering { background: #b8d2e2; }
+.leafpanel-plant-category-group.edibles { background: #61b58e; }
+.leafpanel-plant-category-group h3 {
+  margin: 0 0 1rem;
+  color: var(--ink);
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
+  font-style: italic;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.leafpanel-plant-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+.leafpanel-plant-category-group .leafpanel-plant-list {
+  display: block;
+  min-height: 0;
+  padding: 1rem 0 0;
+  background: transparent;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.leafpanel-plant-category-group .leafpanel-plant-list span::before { content: " / "; }
 .leafpanel-plants-intro h2 {
   font-size: clamp(2.6rem, 4.8vw, 5rem);
   font-weight: 300;
@@ -583,10 +615,16 @@
   background: var(--cream);
 }
 .leafpanel-plant-card img {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.leafpanel-plant-category-group .leafpanel-plant-card {
+  aspect-ratio: 1;
+  height: auto;
 }
 .leafpanel-plant-card figcaption {
   position: absolute;
@@ -610,19 +648,6 @@
 .leafpanel-plant-list.muted {
   background: #afc95d;
 }
-.leafpanel-plant-mosaic > .pothos { grid-column: 2; }
-.leafpanel-plant-mosaic > .birkin { grid-column: 4; }
-.leafpanel-plant-mosaic > .marantus { grid-column: 6; }
-.leafpanel-plant-mosaic > .petunia { grid-column: 3; }
-.leafpanel-plant-mosaic > .aglaonema { grid-column: 5; }
-.leafpanel-plant-mosaic > .syngonium { grid-column: 2; }
-.leafpanel-plant-mosaic > .snake { grid-column: 4; }
-.leafpanel-plant-mosaic > .cherry { grid-column: 6; }
-.leafpanel-plant-mosaic > .basil { grid-column: 1; }
-.leafpanel-plant-mosaic > .tomato { grid-column: 3; }
-.leafpanel-plant-mosaic > .flowering { grid-column: 6; }
-.leafpanel-plant-mosaic > .air { grid-column: 1; }
-.leafpanel-plant-mosaic > .edibles { grid-column: 6; }
 .leafpanel-configure {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -837,6 +862,47 @@
   }
   .leafpanel-plant-grid img {
     height: 210px;
+  }
+  .leafpanel-plant-categories {
+    grid-template-columns: 1fr;
+  }
+  .leafpanel-plant-category-group {
+    width: 100%;
+  }
+  .leafpanel-plant-cards {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+  .leafpanel-plant-category-group .leafpanel-plant-card {
+    display: grid;
+    grid-template-columns: 84px minmax(0, 1fr);
+    align-items: center;
+    aspect-ratio: auto;
+    min-height: 84px;
+  }
+  .leafpanel-plant-category-group .leafpanel-plant-card img {
+    position: static;
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+  }
+  .leafpanel-plant-category-group .leafpanel-plant-card figcaption {
+    position: static;
+    min-width: 0;
+    padding: 1rem;
+    background: var(--cream);
+    font-size: 1rem;
+  }
+  .leafpanel-past-clients {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+  .leafpanel-past-clients .leafpanel-client-logo-placeholders {
+    gap: 1.5rem;
+  }
+  .leafpanel-past-clients .leafpanel-client-logo-placeholder {
+    width: 7.5rem;
+    height: 3.75rem;
   }
   .leafpanel-plant-mosaic {
     grid-template-columns: repeat(2, 1fr);
@@ -1115,7 +1181,7 @@
     aspect-ratio: auto;
     height: auto;
     min-height: 0;
-    padding: 4rem 1.25rem 0;
+    padding: 4rem 1.25rem 3rem;
     display: flex;
     flex-direction: column;
   }
@@ -1163,7 +1229,7 @@
 }
 @media (max-width: 480px) {
   .leafpanel-intro {
-    padding-top: 3rem;
+    padding: 3rem 1.25rem 2.5rem;
   }
   .leafpanel-intro-gallery {
     height: 280px;
